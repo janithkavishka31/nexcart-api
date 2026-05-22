@@ -28,5 +28,6 @@ router.use('/products', productRoutes);
 router.use('/cart', cartRoutes);
 router.use('/orders', orderRoutes);
 router.use('/admin', adminRoutes);
+router.use('/uploads', require('../modules/uploads/upload.routes'));
 
 module.exports = router;
