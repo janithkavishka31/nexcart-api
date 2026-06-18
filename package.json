@@ -10,7 +10,8 @@
                     "format":  "prettier --write .",
                     "prisma:generate":  "prisma generate --schema=src/prisma/schema.prisma",
                     "prisma:migrate":  "prisma migrate dev --schema=src/prisma/schema.prisma",
-                    "prisma:studio":  "prisma studio --schema=src/prisma/schema.prisma"
+                    "prisma:studio":  "prisma studio --schema=src/prisma/schema.prisma",
+                    "prisma:backfill-category-images":  "node src/prisma/backfillCategoryImages.js"
                 },
     "keywords":  [
                      "ecommerce",
