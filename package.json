@@ -10,7 +10,8 @@
                     "format":  "prettier --write .",
                     "prisma:generate":  "prisma generate --schema=src/prisma/schema.prisma",
                     "prisma:migrate":  "prisma migrate dev --schema=src/prisma/schema.prisma",
-                    "prisma:studio":  "prisma studio --schema=src/prisma/schema.prisma"
+                    "prisma:studio":  "prisma studio --schema=src/prisma/schema.prisma",
+                    "prisma:backfill-category-images":  "node src/prisma/backfillCategoryImages.js"
                 },
     "keywords":  [
                      "ecommerce",
@@ -42,7 +43,8 @@
                          "pg":  "^8.21.0",
                          "bcrypt":  "^6.0.0",
                          "jsonwebtoken":  "^9.0.3",
-                         "zod":  "^4.4.3"
+                         "zod":  "^4.4.3",
+                         "multer":  "^2.2.0"
                      },
     "devDependencies":  {
                             "eslint":  "^10.4.1",

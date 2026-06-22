@@ -1,4 +1,4 @@
-﻿generator client {
+generator client {
   provider = "prisma-client-js"
 }
 
@@ -66,6 +66,7 @@ model Category {
   name        String    @unique
   slug        String    @unique
   description String?
+  imageUrl    String?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
   products    Product[]
@@ -168,4 +169,3 @@ model RefreshToken {
   @@index([expiresAt])
   @@map("refresh_tokens")
 }
-
