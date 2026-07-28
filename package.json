@@ -45,7 +45,9 @@
                          "bcrypt":  "^6.0.0",
                          "jsonwebtoken":  "^9.0.3",
                          "zod":  "^4.4.3",
-                         "multer":  "^2.2.0"
+                         "multer":  "^2.2.0",
+                         "swagger-ui-express":  "^5.0.1",
+                         "yamljs":  "^0.3.0"
                      },
     "devDependencies":  {
                             "eslint":  "^10.4.1",
